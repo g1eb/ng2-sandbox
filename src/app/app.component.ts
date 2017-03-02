@@ -2,9 +2,19 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>{{ name }}</h1>`,
+  template: `
+    <child-component
+      [someObject]="someObject"
+      [someString]="someString"
+      [someNumber]="someNumber">
+    </child-component>
+  `,
 })
 
 export class AppComponent  {
-  name = 'App Component';
+  someObject = {
+    'key': 'value',
+  };
+  someString = 'asdfasdfadf';
+  someNumber = 1234;
 }
