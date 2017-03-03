@@ -2,11 +2,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'child-component',
-  styles: [`
-    :host {
-      color: red;
-    }
-  `],
   template: `
     <h1>Object: {{ someObject | json }}</h1>
     <h1>String: {{ someString }}</h1>
@@ -15,6 +10,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     <input type="text" name="value" [(ngModel)]="value" placeholder="value" />
     <button (click)="callOnChange()">Click Me</button>
   `,
+  styles: [`
+    :host {
+      color: red;
+    }
+  `],
+  styleUrls:  ['./src/app/child.component.css'],
 })
 
 export class ChildComponent  {
