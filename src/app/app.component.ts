@@ -11,7 +11,6 @@ import { Component } from '@angular/core';
     </child-component>
   `,
 })
-
 export class AppComponent  {
   someObject = {
     'key': 'value',

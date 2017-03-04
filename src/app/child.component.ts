@@ -17,7 +17,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   `],
   styleUrls:  ['./src/app/child.component.css'],
 })
-
 export class ChildComponent  {
   @Input() someObject: any;
   @Input() someString: string;
